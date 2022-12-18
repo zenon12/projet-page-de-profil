@@ -1,0 +1,343 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.top-page-profil .background {
+    position: relative;
+}
+.top-page-profil .background img{
+    width: 100%;
+    height: 270px;
+    border-radius: 0 0 10px 10px;
+}
+.top-page-profil .background .icon-camera{
+    position: absolute;
+    bottom: 11px;
+    left: 77.5%;
+    background-color: #ccc;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.top-page-profil .background .fa-camera {
+    font-size: 1.2rem;
+}
+.top-page-profil .background span {
+    font-size: 0.9rem;
+    display: none;
+}
+.top-page-profil .background .icon-camera:hover span {
+    display: inline;
+}
+
+
+.top-page-profil .owner-profil-info {
+    text-align: center;
+    position: relative;
+    padding: 25px 0  5px 0;
+}
+.top-page-profil .owner-profil-info .profile-picture-and-camera {
+    position: absolute;
+    bottom: 50px;
+    left: 44.2%;
+
+}
+
+.top-page-profil .owner-profil-info img {
+    width: 110px;
+    border-radius: 100px;
+    border: 4px solid #efefef;
+}
+
+.top-page-profil .owner-profil-info .fa-camera {
+    position: absolute;
+    bottom: 15px;
+    right: 4px;
+    background-color: #ccc;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.top-page-profil .owner-profil-info .owner-details {
+    padding-left: 10px;
+}
+
+
+.top-page-profil .owner-profil-info .owner-fullname {
+
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.top-page-profil .owner-profil-info .owner-action {
+    font-size: 0.9rem;
+    color: cadetblue;
+    cursor: pointer;
+}
+
+.divider {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* *************** Menu page de profile *********** */
+nav#menu-page-profil {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /20%);
+    background-color: white;
+    z-index: 5;
+}
+nav#menu-page-profil ul {
+    height: 35px;
+     margin: 0;
+     list-style: none;
+     display: flex;
+     align-items: center;
+    }
+    
+    nav#menu-page-profil ul a {
+        text-decoration: none;
+        color: gray;
+        padding: 8px 20px;
+    }
+    
+    nav#menu-page-profil ul a:hover {
+        background-color: #efefef;
+    }
+    nav#menu-page-profil ul a span  {
+        font-size: 0.8rem;
+        color: #ccc;
+    }
+
+
+
+/* ************************* CONTENT PAGE PROFIL****************************** */
+
+.content-page-profil {
+    display: grid;
+    grid-template-columns: 210px 510px;
+    grid-row: 500px 1fr ;
+    grid-template-areas: "introduce post" "none post";
+    justify-content: center;
+    gap: 0 12px;
+    margin-top: 15px;
+}
+
+.content-page-profil .introduce-and-action {
+    grid-area: introduce;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /20%);
+    border-radius: 5px;
+    
+}
+.content-page-profil .introduce-and-action h3 {
+    margin: 5px 0;
+}
+.content-page-profil .live-info {
+    padding: 5px 0;
+    font-size: 0.8rem;
+}
+.content-page-profil .followers-number {
+    padding: 5px 0;
+    font-size: 0.8rem;
+}
+.content-page-profil .actions-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.content-page-profil .action-item {
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: #ccc;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+
+
+/* ************ post et create post ************ */
+.content-page-profil .owner-post-and-create-post {
+    grid-area: post ;
+    
+}
+
+.create-post {
+    padding: 4px 5px;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /20%);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.create-post img {
+    height: 45px;
+    border-radius: 40px;
+}
+
+.create-post .profile-picture-button {
+    display: flex;
+    align-items: center;
+}
+
+.create-post .button {
+    flex: 1;
+    margin-left: 20px;
+}
+.create-post .button .bt-create-post {
+    background-color: #ccc;
+    height: 35px;
+    border-radius: 50px;
+    line-height: 33px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.create-post .icon-post {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+}
+
+.icon-video,
+.icon-image {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.post-item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /20%);
+    border-radius: 10px;
+}
+
+.post-item .user-info {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+}
+
+.post-item .user-info .profile-picture img {
+    width: 45px;
+    border-radius: 40px;
+}
+
+.post-item .user-info .user-fullname {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.post-item .user-info .time {
+    color: #ccc;
+}
+
+
+
+.post-item .post-content .content-title{
+    padding: 0 10px 10px 10px;
+    font-size: 1.12rem;
+}
+
+.post-item .post-content .ullistration-image img {
+    width: 100%;
+    height: 250px;
+}
+.post-item .post-content .ullistration-video video {
+    width: 100%;
+    height: 300px;
+}
+
+.post-item .post-content .ullistration-footer {
+    padding: 10px;
+}
+.post-item .post-content .ullistration-footer a {
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.post-item .post-content .ullistration-footer h3{
+    margin: 0;
+}
+
+.post-item .number-like-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.post-item .number-like-comment .number-like,
+.post-item .number-like-comment .number-comment{
+    display: flex;
+    align-items: center;
+}
+
+.post-item .divider {
+    margin: 0 10px;
+}
+.post-item .post-actions{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.post-item .post-action {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.post-item .post-action:hover {
+    text-decoration: underline;
+}
+.post-item .post-action:active {
+    color: brown;
+}
+
+
+
+
+/* ************************* RESPONSIVE ***************************** */
+
+@media screen and (max-width: 900px) {
+    
+    .content-page-profil {
+        grid-template-columns:  420px;
+        grid-row: 500px 1fr ;
+        grid-template-areas: "introduce" "post";
+        justify-content: center;
+        gap: 0 12px;
+        margin-top: 15px;
+    }
+
+    .content-page-profil .introduce-and-action {
+        margin-bottom: 10px ;
+        
+    }
+    .content-page-profil .live-info {
+        font-size: 0.9rem;
+    }
+    .content-page-profil .followers-number {
+        font-size: 0.9rem;
+    }
+    ul{
+        padding: 0;
+        white-space: nowrap;
+    }
+    
+}
